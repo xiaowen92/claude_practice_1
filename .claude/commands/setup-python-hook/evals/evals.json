@@ -1,0 +1,45 @@
+{
+  "skill_name": "setup-python-hook",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I keep having a problem where you modify a function in utils.py and then main.py breaks because you forgot to update the call site. Can you set up something that catches this automatically in my Python project?",
+      "expected_output": "The skill installs the Ruff + Pyright PostToolUse hook: creates .venv, installs ruff and pyright, copies the bundled scripts to scripts/, configures .claude/settings.json, and verifies with a smoke test.",
+      "files": [],
+      "expectations": [
+        "A .venv directory is created with ruff and pyright installed",
+        "scripts/python_check_hook.py is created in the project",
+        "scripts/run_python_hook.sh is created and made executable",
+        ".claude/settings.json contains a PostToolUse hook entry with matcher Write|Edit|MultiEdit",
+        "A smoke test is performed to verify the hook fires correctly",
+        "requirements-dev.txt is created listing ruff and pyright"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Add type checking automation to this project. I want pyright to run after every file edit and tell you if you've broken anything.",
+      "expected_output": "The skill sets up the full hook pipeline: venv with ruff+pyright, hook scripts, settings.json configuration. Pyright runs project-wide after each edit to catch cross-file type errors.",
+      "files": [],
+      "expectations": [
+        "A .venv directory is created with ruff and pyright installed",
+        "scripts/python_check_hook.py is created in the project",
+        ".claude/settings.json contains a PostToolUse hook with command 'bash scripts/run_python_hook.sh'",
+        "The hook is verified to catch type errors (smoke test with a deliberate error)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Set up ruff and pyright hooks for my Python project so code quality is checked automatically when you edit files.",
+      "expected_output": "Full hook installation: .venv, ruff + pyright installed, bundled scripts copied to scripts/, .claude/settings.json configured with PostToolUse hook, smoke test completed.",
+      "files": [],
+      "expectations": [
+        "A .venv directory is created",
+        "ruff is installed and accessible via .venv",
+        "pyright is installed and accessible via .venv",
+        "scripts/python_check_hook.py exists in the project",
+        "scripts/run_python_hook.sh exists in the project",
+        ".claude/settings.json is configured with PostToolUse hook"
+      ]
+    }
+  ]
+}
