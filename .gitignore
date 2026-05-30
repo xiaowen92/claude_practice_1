@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 setup-python-hook-workspace/
 .DS_Store
+.env
