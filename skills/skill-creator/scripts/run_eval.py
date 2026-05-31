@@ -89,6 +89,7 @@ def run_single_query(
             cwd=project_root,
             env=env,
         )
+        assert process.stdout is not None
 
         triggered = False
         start_time = time.time()
