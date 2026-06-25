@@ -1,0 +1,20 @@
+[
+  {
+    "task": "Write a Python function that parses an AWS S3 bucket name from an S3 URI (e.g., 's3://my-bucket/path/to/file') and returns just the bucket name."
+  },
+  {
+    "task": "Create a JSON object that represents an AWS IAM policy allowing read-only access to a specific S3 bucket named 'company-data'."
+  },
+  {
+    "task": "Write a regular expression that matches and validates AWS EC2 instance IDs (format: i- followed by 17 hexadecimal characters)."
+  },
+  {
+    "task": "Write a Python function that validates if a given string is a valid AWS S3 bucket name according to AWS naming rules (3-63 characters, lowercase letters, numbers, hyphens only, cannot start or end with hyphen)"
+  },
+  {
+    "task": "Write a JSON object that represents an AWS IAM policy allowing read-only access to a specific S3 bucket named 'my-data-bucket'"
+  },
+  {
+    "task": "Write a regular expression that extracts the region code from an AWS ARN string (e.g., 'us-east-1' from 'arn:aws:s3:us-east-1:123456789012:bucket/my-bucket')"
+  }
+]
