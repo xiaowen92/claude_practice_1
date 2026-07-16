@@ -1,0 +1,14 @@
+[
+  {
+    "task": "Given a DataFrame with columns 'product' and 'price', filter and return only rows where price is less than 50",
+    "format": "pandas"
+  },
+  {
+    "task": "Given a 2D numpy array of shape (4, 3), return the sum of each column as a 1D array",
+    "format": "numpy"
+  },
+  {
+    "task": "Given a DataFrame with columns 'category' and 'sales', group by category and return the mean sales for each category",
+    "format": "pandas"
+  }
+]
