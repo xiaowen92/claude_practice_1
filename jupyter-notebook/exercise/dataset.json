@@ -1,0 +1,29 @@
+[
+  {
+    "task": "Given a pandas DataFrame with columns 'product', 'quantity', and 'price', return a new DataFrame containing only rows where quantity is greater than 5, sorted by price in descending order",
+    "format": "pandas",
+    "solution_criteria": [
+      "Uses boolean indexing to filter rows (e.g. df[df['quantity'] > 5]), not iterrows() or apply()",
+      "Uses sort_values() method to sort by price in descending order",
+      "Does not mutate the original DataFrame; returns a new filtered and sorted DataFrame"
+    ]
+  },
+  {
+    "task": "Given a 2D numpy array of shape (4, 3) containing numerical values, return a 1D array with the sum of each row",
+    "format": "numpy",
+    "solution_criteria": [
+      "Uses vectorized reduction along axis 1 (e.g. arr.sum(axis=1)), not a Python for-loop",
+      "Returns a 1D array of length 4",
+      "Does not modify the input array"
+    ]
+  },
+  {
+    "task": "Given a pandas DataFrame with columns 'category' and 'sales', return a DataFrame with the mean sales for each unique category",
+    "format": "pandas",
+    "solution_criteria": [
+      "Uses groupby() followed by mean() to aggregate data by category",
+      "Returns a DataFrame (or Series with appropriate index), not a list or dict",
+      "The result includes each unique category exactly once with its corresponding mean sales value"
+    ]
+  }
+]
