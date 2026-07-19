@@ -1,14 +1,14 @@
 [
   {
-    "task": "Given a DataFrame with columns 'product' and 'price', filter and return only rows where price is less than 50",
+    "task": "Given a DataFrame with columns 'product' and 'sales', return the total sales grouped by product",
     "format": "pandas"
   },
   {
-    "task": "Given a 2D numpy array of shape (4, 3), return the sum of each column as a 1D array",
+    "task": "Given a 2D numpy array of shape (4, 5), return a new array with each element multiplied by 2",
     "format": "numpy"
   },
   {
-    "task": "Given a DataFrame with columns 'category' and 'sales', group by category and return the mean sales for each category",
+    "task": "Given a DataFrame with columns 'name', 'age', and 'salary', filter to rows where age is between 25 and 35 (inclusive) and select only the 'name' and 'salary' columns",
     "format": "pandas"
   }
 ]
